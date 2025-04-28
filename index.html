@@ -44,12 +44,19 @@
       color: #555;
       margin-top: 0;
     }
-    iframe {
-      width: 100%;
-      height: 650px;
-      border: 1px solid #ccc;
-      border-radius: 12px;
-      margin-top: 20px;
+    .launch-button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 15px 30px;
+      background-color: #00807f;
+      color: white;
+      font-size: 18px;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+    }
+    .launch-button:hover {
+      background-color: #006b6a;
     }
     .cta {
       margin-top: 20px;
@@ -74,7 +81,6 @@
 <body>
 
 <header>
-  <!-- Replace src if needed -->
   <img src="https://givingdocs.com/_next/static/media/logo.a9e08bc8.svg" alt="Giving Docs Logo">
 </header>
 
@@ -84,14 +90,13 @@
     Discover how a Charitable Gift Annuity can provide you with income for life while supporting your favorite causes.
   </p>
 
-  <!-- EMBED YOUR CHATBOT -->
- <a href="https://script.google.com/macros/s/AKfycbwkiAieLk17qNtp0nGj-52q-vWkO565mU9neKmq7Ppy6TMhjl6yhajg4XDs8dFNH4Fw/exec" 
-   target="_blank" 
-   style="display:inline-block; margin-top:20px; padding:15px 30px; background-color:#00807f; color:white; font-size:18px; text-decoration:none; border-radius:8px;">
-  Launch CGA Assistant
-</a>
+  <!-- Launch Button -->
+  <a class="launch-button" href="https://script.google.com/macros/s/AKfycbwkiAieLk17qNtp0nGj-52q-vWkO565mU9neKmq7Ppy6TMhjl6yhajg4XDs8dFNH4Fw/exec" target="_blank">
+    Launch CGA Assistant
+  </a>
+
   <div class="cta">
-    <p>Want to learn more? <a href="mailto:support@givingdocs.com">Contact Us!</a></p>
+    <p>Have questions? <a href="mailto:support@givingdocs.com">Contact Us!</a></p>
   </div>
 </main>
 
@@ -101,3 +106,4 @@
 
 </body>
 </html>
+
